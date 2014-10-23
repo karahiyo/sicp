@@ -1,6 +1,8 @@
 ;; q1.8
 ;;
 ;; (x/y^2 + 2*y)/3
+(use slib)
+(require `trace)
 
 (define (square x)
         (* x x))
@@ -22,4 +24,9 @@
 (print (cube-root (* 2 2 2)))
 (print (cube-root 0))
 (print (cube-root (* -2 -2 -2)))
+(print (cube-root (* -9 -9 -9)))
+
+
+(trace cube-root)
+(print "-------------trace--------------")
 (print (cube-root (* -9 -9 -9)))
