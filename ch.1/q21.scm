@@ -45,8 +45,8 @@
 (define (square n)
   (* n n))
 
-(print (fast-prime? 199 1))
-(print (fast-prime? 1999 1))
-(print (fast-prime? 19999 1))
+(print (fast-prime? 199 1)) ;; #=> #t
+(print (fast-prime? 1999 1))  ;; #=> #t
+(print (fast-prime? 19999 1)) ;; #=> #f
 
 
