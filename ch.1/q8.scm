@@ -19,6 +19,7 @@
         (cube-iter 1.0 x))
 
 ;; ----
+(print (cube-root 0.000001))
 
 (print (cube-root (* 9 9 9)))
 (print (cube-root (* 2 2 2)))
@@ -30,3 +31,4 @@
 (trace cube-root)
 (print "-------------trace--------------")
 (print (cube-root (* -9 -9 -9)))
+(print (cube-root (* 0.01 0.01 0.01)))
