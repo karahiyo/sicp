@@ -35,4 +35,8 @@
         ((fermat-test n) (fast-prime? n (- times 1)))
         (else #f)))
 
+(define (inc n)
+  (+ n 1))
+(define (cube n)
+  (* n n n))
 
