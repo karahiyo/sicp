@@ -40,3 +40,5 @@
 (define (cube n)
   (* n n n))
 
+(define (average a b)
+  (/ (+ a b) 2))
