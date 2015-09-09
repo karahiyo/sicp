@@ -27,10 +27,10 @@
           (else
             (error "Values are not of opposite sign" a b)))))
 
-(print (half-interval-method sin 2.0 4.0))
+(half-interval-method sin 2.0 4.0)
 ; => 3.14111328125
 
-(print (half-interval-method (lambda (x) (- (* x x x) (* 2 x) 3)) 1.0 2.0))
+(half-interval-method (lambda (x) (- (* x x x) (* 2 x) 3)) 1.0 2.0)
 ; => 1.89306640625
 
 ;; 吸引的不動点を探索する
@@ -45,10 +45,10 @@
         (try next))))
   (try first-guess))
 
-(print (fixed-point cos 1.0))
+(fixed-point cos 1.0)
 ; => 0.7390822985224023
 
-(print (fixed-point (lambda (y) (+ (sin y) (cos y))) 1.0))
+(fixed-point (lambda (y) (+ (sin y) (cos y))) 1.0)
 ; => 1.2587315962971173
 
 
