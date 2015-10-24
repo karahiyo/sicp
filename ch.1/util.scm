@@ -42,3 +42,6 @@
 
 (define (average a b)
   (/ (+ a b) 2))
+
+(define (average-of-3 a b c)
+  (/ (+ a b c) 3))
