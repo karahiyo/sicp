@@ -25,7 +25,8 @@
   (display (x-point p))
   (display ",")
   (display (y-point p))
-  (display ")"))
+  (display ")")
+  (newline))
 
 (print-point (midpoint-segment (make-segment (make-point 1 1) (make-point 5 5))))
 (print-point (midpoint-segment (make-segment (make-point -1 -1) (make-point 5 5))))
