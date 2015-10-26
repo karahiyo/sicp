@@ -40,6 +40,10 @@
 (define rect1 (make-rectangle (make-point 0 1) (make-point 1 1)
                               (make-point 0 0) (make-point 1 0)))
 
+(print (rectangle-top-l rect1))
+(print (rectangle-top-r rect1))
+(print (rectangle-bottom-l rect1))
+(print (rectangle-bottom-r rect1))
 (print (perimeter rect1))
 (print (area rect1))
 
@@ -48,9 +52,13 @@
 (define (make-rectangle sx sy)
   (cons sx sy))
 
-(define rect1 (make-rectangle (make-segment (make-point 0 0) (make-point 0 1))
+(define rect1 (make-rectangle (make-segment (make-point 0 1) (make-point 1 1))
                               (make-segment (make-point 0 0) (make-point 1 0))))
 (print (perimeter rect1))
 (print (area rect1))
 
+(print (rectangle-top-l rect1))
+(print (rectangle-top-r rect1))
+(print (rectangle-bottom-l rect1))
+(print (rectangle-bottom-r rect1))
 
