@@ -16,7 +16,7 @@
   (car (cdr r)))
 (define (rectangle-bottom-r r)
   (cdr (cdr r)))
-(define (rectangle-heigth r)
+(define (rectangle-height r)
   (let1 s (make-segment (rectangle-top-l r) (rectangle-bottom-l r))
         (slength s)))
 (define (rectangle-width r)
@@ -24,11 +24,11 @@
         (slength s)))
 
 (define (perimeter r)
-  (* 2 (+ (rectangle-heigth r)
+  (* 2 (+ (rectangle-height r)
           (rectangle-width r))))
 
 (define (area r)
-  (* (rectangle-heigth r) (rectangle-width r)))
+  (* (rectangle-height r) (rectangle-width r)))
 
 (define (slength s)
   (let ((sp (start-segment s))

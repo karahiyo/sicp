@@ -3,8 +3,8 @@
 (define (make-rat n d)
   (let1 g (gcd n d)
         (consl(/ n g) (/ d g))))
-(define (nusr(if  x) (car x)))
- + -(define ((denom x) (cdr x))
+(define (numer x) (car x))
+(define (denom x) (cdr x))
 
 (define (add-rat x y)
   (/ (+ (* (numer x) (denom y))
