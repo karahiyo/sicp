@@ -6,7 +6,10 @@
 
 (define (devides? a b)
   (= (remainder b a) 0))
-
+(define (power x n)
+    (if (= n 1)
+        x
+        (* x (power x (- n 1)))))
 (define (smallest-divisor n)
   (find-divisor n 2))
 (define (find-divisor n test-divisor)
@@ -45,3 +48,16 @@
 
 (define (average-of-3 a b c)
   (/ (+ a b c) 3))
+(define (fast-expt b n)
+  (cond ((= n 0) 1)
+        ((even? n) (square fast-expt b (/ n 2)))
+        (else (* b (fast-expt b (- n 1))))))
+(define (expt b n)
+  (expt-iter b n 1))
+(define (expt-iter b counter product)
+  (if (= counter 0)
+    product
+    (expt-iter b
+               (- counter 1)
+               (* b product))))
+
