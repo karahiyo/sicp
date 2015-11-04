@@ -21,13 +21,9 @@
                                (/ 1.0 (lower-bound y)))))
 
 (define (upper-bound x)
-  (if (> (car x) (cdr x))
-    (car x)
-    (cdr x)))
+  (cdr x))
 (define (lower-bound x)
-  (if (< (car x) (cdr x))
-    (car x)
-    (cdr x)))
+  (car x))
 
 (print (upper-bound (make-interval 3 5))) ; => 5
 (print (lower-bound (make-interval 3 5))) ; => 3
