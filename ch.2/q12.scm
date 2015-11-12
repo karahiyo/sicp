@@ -14,7 +14,7 @@
         (make-interval (* c (- 1.0 np)) (* c (+ 1.0 np)))))
 
 (define (percent i)
-  (* 100
+  (* 100.0
     (/ (- (upper-bound i) (center i)) (center i))))
 
 (print (center (make-center-percent 3 9)))
