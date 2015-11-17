@@ -20,9 +20,9 @@
         ((= kinds-of-coins 4) 25)
         ((= kinds-of-coins 5) 50)))
 
-(print (count-change 100))
-(trace count-change cc first-denomination)
+;(print (count-change 100))
+;(trace count-change cc first-denomination)
 ;;(trace count-change)
 ;;(trace cc)
 ;;(trace first-denomination)
-(count-change 5)
+;(count-change 5)
