@@ -22,3 +22,9 @@
     list2
     (cons (car list1) (append (cdr list1) (list2)))))
 
+(define (map proc items)
+  (if (null? items)
+    nil
+    (cons (pruc (car items))
+          (map proc (cdr items)))))
+
